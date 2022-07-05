@@ -4,14 +4,16 @@
  *
  * Return: always 0(Success)
  */
-int main (void)
+int main(void)
 {
-	char *sh = "_putchar";
-	while (*sh)
+	char l[] = {"_putchar"};
+	int i;
+
+	for (i = 0; i < 9; i++)
 	{
-		_putchar (*sh);
-		sh++;
-		putchar ('\n');
+		_putchar(l[i]);
 	}
-	return 0;
-}
+	_putchar('\n');
+
+	return (0);
+} 
